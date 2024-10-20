@@ -1,39 +1,70 @@
-<!-- app/register.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Social Media Platform</title>
+    
+    <!-- Tailwind CSS for quick prototyping (use local version if necessary) -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Optional: Include a favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
-        <h2 class="text-2xl font-bold text-center mb-6">Create a New Account</h2>
-        <form>
-            <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                <input type="text" id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    
+    <!-- Navbar Section -->
+    <header class="bg-white shadow-lg py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-blue-600">Social Platform</a>
+            <div class="space-x-4">
+                <a href="/login/login.html" class="text-blue-600 hover:text-blue-800 font-medium">Login</a>
+                <a href="/register/register.html" class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Sign Up</a>
             </div>
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                <input type="email" id="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="flex-grow container mx-auto px-6 mt-12">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-800">Connect with Friends and the World Around You</h1>
+            <p class="text-gray-600 mt-4">Join the community of millions today and share your thoughts, photos, and experiences!</p>
+            <div class="mt-6">
+                <a href="/register/register.html" class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-300">Join Now</a>
             </div>
-            <div class="mb-4">
-                <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-                <input type="password" id="password" name="password" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+
+        <!-- Features Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Stay Connected</h2>
+                <p class="text-gray-600">Communicate with friends, meet new people, and stay in touch with those who matter to you.</p>
             </div>
-            <div class="mb-6">
-                <label for="confirm-password" class="block text-sm font-medium text-gray-700">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Share Your Moments</h2>
+                <p class="text-gray-600">Upload photos, videos, and share the special moments of your life with others.</p>
             </div>
-            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-md hover:bg-blue-700 transition duration-300">Sign Up</button>
-        </form>
-        <p class="mt-4 text-center text-sm text-gray-600">
-            By clicking Sign Up, you agree to our 
-            <a href="#" class="text-blue-600 hover:underline">Terms</a> and 
-            <a href="#" class="text-blue-600 hover:underline">Privacy Policy</a>.
-        </p>
-    </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Explore Content</h2>
+                <p class="text-gray-600">Discover stories, trends, and content shared by people around the globe.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">© 2024 Social Media Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
