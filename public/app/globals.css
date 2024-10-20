@@ -1,0 +1,22 @@
+/* Basic styling for containers */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

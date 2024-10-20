@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Social Media Platform</title>
+    
+    <!-- Tailwind CSS for quick prototyping (use local version if necessary) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Optional: Include a favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+        /* Add custom styles here */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    
+    <!-- Navbar Section -->
+    <header class="bg-white shadow-lg py-4">
+        <nav class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-blue-600">Social Platform</a>
+            <div class="space-x-4">
+                <a href="/login/page.js" class="text-blue-600 hover:text-blue-800 font-medium">Login</a>
+                <a href="/register/page.js" class="text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 transition duration-300">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main class="flex-grow container mx-auto px-6 mt-12">
+        <div class="text-center mb-16">
+            <h1 class="text-4xl font-bold text-gray-800">Connect with Friends and the World Around You</h1>
+            <p class="text-gray-600 mt-4">Join the community of millions today and share your thoughts, photos, and experiences!</p>
+            <div class="mt-6">
+                <a href="/register/register.html" class="bg-blue-600 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-700 transition duration-300">Join Now</a>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Stay Connected</h2>
+                <p class="text-gray-600">Communicate with friends, meet new people, and stay in touch with those who matter to you.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Share Your Moments</h2>
+                <p class="text-gray-600">Upload photos, videos, and share the special moments of your life with others.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Explore Content</h2>
+                <p class="text-gray-600">Discover stories, trends, and content shared by people around the globe.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-4 mt-16">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">© 2024 Social Media Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
